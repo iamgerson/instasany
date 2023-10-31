@@ -1,4 +1,5 @@
 'use client'
+
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 
@@ -18,14 +19,33 @@ export function SectionHero() {
 
   useEffect(() => {
     const textHero = textHeroRef.current
+    const mLeft = mockupLeftRef.current
+    const mRight = mockupRightRef.current
 
     gsap.fromTo(textHero, {
       opacity: 0,
       y: 20
     },{
       opacity: 1,
-      y: 0
+      y: 0,
+      duration: 1,
+      ease: 'power4.out'
     })
+
+    gsap.fromTo(mLeft, {
+      rotate: 0
+    }, {
+      rotate: -10,
+      duration: 1
+    })
+    
+    gsap.fromTo(mRight, {
+      rotate: 0
+    }, {
+      rotate: 10,
+      duration: 1
+    })
+
   }, [])
 
   return (
@@ -49,8 +69,8 @@ export function SectionHero() {
           <Image src={HandIcon02} alt="Icon hand2" className="absolute top-0 right-0"/>
         </div>
         <div className="absolute -bottom-44 w-full max-w-area-mockups flex justify-between">
-          <Image src={Mockup} alt="Mockup" className="relative -rotate-12 top-[18px] left-[53px]" ref={mockupLeftRef}/>
-          <Image src={Mockup} alt="Mockup" className="relative rotate-12 top-[18px] right-[53px]" ref={mockupRightRef}/>
+          <Image src={Mockup} alt="Mockup" className="relative top-[18px] left-[53px]" ref={mockupLeftRef}/>
+          <Image src={Mockup} alt="Mockup" className="relative top-[18px] right-[53px]" ref={mockupRightRef}/>
         </div>
       </GridContainer>
     </section>
