@@ -5,7 +5,6 @@
 Uma aplicação para cursos de instagram criado pelo Gerson
 
 ## Índice
-- <a href="#funcionalidades">Funcionalidades do Projecto</a>
 - <a href="#layout">Layout</a>
 - <a href="#demonstracao">Demonstração</a>
 - <a href="#run">Run Projecto</a>
@@ -13,9 +12,6 @@ Uma aplicação para cursos de instagram criado pelo Gerson
 - <a href="#autores">Pessoa Autora</a>
 - <a href="#passos">Prṕximos Passos</a>
 
-## ⚙️Funcionalidades do Projecto
-
-- [X]Cadastro
 
 ## Layout
 ![Landing page](./public/Instasany.png)
