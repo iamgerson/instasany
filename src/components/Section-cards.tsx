@@ -30,7 +30,7 @@ export function SectionCards() {
       opacity: 1,
       x: 0,
       duration: 0.5,
-      stagger: 1,
+      stagger: .5,
       scrollTrigger: {
         trigger: section,
         start: 'center center'

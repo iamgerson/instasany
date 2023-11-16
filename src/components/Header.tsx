@@ -24,7 +24,7 @@ export function Header() {
         <Image src={LogoIcon} alt="Logo"/>
 
         <div className="flex items-center gap-20">
-          <nav className="flex ">
+          <nav className="flex">
             
             {
               arrayMenu.map((item, index) => (
